@@ -1,13 +1,13 @@
 <script lang="ts">
-  $: count = 0
+$: count = 0
 
-  function increment(event: MouseEvent) {
-    event.preventDefault()
-    count++
-  }
+function increment(event: MouseEvent) {
+  event.preventDefault()
+  count++
+}
 </script>
 
 <div>
   <p>{count}</p>
-  <button on:click={increment}>+1</button>
+  <button on:click="{increment}">+1</button>
 </div>

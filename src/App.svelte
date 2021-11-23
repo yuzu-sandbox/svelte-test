@@ -1,8 +1,8 @@
 <script lang="ts">
-  import CounterForm from './Counter.svelte'
-  import SubmitHandleForm from './SubmitHandleForm.svelte'
+import CounterForm from './Counter.svelte'
+import SubmitHandleForm from './SubmitHandleForm.svelte'
 
-  let name: string = 'world'
+let name: string = 'world'
 </script>
 
 <h1 class="red">Hello {name}!</h1>
@@ -10,7 +10,7 @@
 <SubmitHandleForm />
 
 <style>
-  .red {
-    color: red;
-  }
+.red {
+  color: red;
+}
 </style>

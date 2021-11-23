@@ -5,7 +5,9 @@
   "license": "MIT",
   "packageManager": "yarn@3.1.0",
   "scripts": {
-    "build": "node -r esbuild-register build.ts"
+    "build": "node -r esbuild-register build.ts",
+    "check": "svelte-check",
+    "format": "prettier -w ."
   },
   "devDependencies": {
     "@types/node": "^16.11.9",
@@ -13,6 +15,8 @@
     "esbuild-register": "^3.1.2",
     "esbuild-svelte": "^0.5.7",
     "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.5.0",
+    "svelte-check": "^2.2.10",
     "svelte-preprocess": "^4.9.8",
     "typescript": "^4.5.2"
   }

@@ -1,11 +1,11 @@
-import { build } from "esbuild"
-import sveltePlugin from "esbuild-svelte"
-import sveltePreprocess from "svelte-preprocess"
+import {build} from 'esbuild'
+import sveltePlugin from 'esbuild-svelte'
+import sveltePreprocess from 'svelte-preprocess'
 
 build({
-  entryPoints: ["src/index.ts"],
+  entryPoints: ['src/index.ts'],
   bundle: true,
-  outfile: "public/dist/bundle.js",
+  outfile: 'public/dist/bundle.js',
   plugins: [
     sveltePlugin({
       preprocess: sveltePreprocess(),
