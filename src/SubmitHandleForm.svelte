@@ -1,24 +1,20 @@
 <script lang="ts">
-$: v = 0
+let v = 0
 
-async function f(): Promise<number> {
+async function f() {
   return v + 1
 }
 
-async function submitHandle(
-  evt: Event & {
-    currentTarget: EventTarget & HTMLFormElement
-  }
-) {
-  evt.preventDefault()
+async function submitHandle() {
   const result = await f()
   console.log('result', result)
+  v = result
 }
 
 let inputValue = ''
 </script>
 
-<form on:submit="{submitHandle}">
+<form on:submit|preventDefault="{submitHandle}">
   <p>{v} - {inputValue}</p>
 
   <input type="text" bind:value="{inputValue}" />

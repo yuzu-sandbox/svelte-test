@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.11.9",
+    "@yuzu441/prettier-config": "^1.0.1",
     "esbuild": "^0.13.15",
     "esbuild-register": "^3.1.2",
     "esbuild-svelte": "^0.5.7",
